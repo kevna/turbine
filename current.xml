@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE turbineData SYSTEM "http://static.quietrevolution.co.uk/xml/schemata/turbineDataPublic.dtd">
+<turbineData>
+<baseplateID>raspberry-pi-1</baseplateID>
+<baseplateName>Baseplate Emulator 1</baseplateName>
+<dateTime>2013-06-03T14:48:31Z</dateTime>
+<windSpeed units="m/s">15.57</windSpeed>
+<windDirection units="degrees">252.3</windDirection>
+<rotorSpeed units="rpm">96.59</rotorSpeed>
+<powerOutput units="W">4770.20</powerOutput>
+<lifetimeEnergyOutput units="kWh">12.44</lifetimeEnergyOutput>
+<softwareRunningHours units="hours">328.45837</softwareRunningHours>
+<windspeedHoursIntegral units="hours ms-1">1550.37</windspeedHoursIntegral>
+<state>stopped</state>
+</turbineData>
