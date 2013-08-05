@@ -33,9 +33,10 @@
 	echo "\t</p>\n</div>\n<footer>\n";
 	echo "\t<span class=\"validation\">\n\t\t<a href=\"http://validator.w3.org/check/referer\">HTML5</a>\n";
 	echo "\t\t<a href=\"http://jigsaw.w3.org/css-validator/check/referer\">CSS3</a>\n\t</span>\n";
-	echo "\t<span class=\"right\">", $xml->baseplateName, ": <span class=\"",
-		$xml->state, "\">",$xml->state,"</span> (",
-		$xml->dateTime, ")</span>\n";
+	echo "<span class=\"center\">other links</span>";
+	echo "\t<span class=\"right\">", $xml->baseplateName, ": ";
+	echo "<span class=\"", $xml->state, "\">",$xml->state,"</span>";
+	echo " (",$xml->dateTime, ")</span>\n";
 	echo "</footer>\n";
 ?>
 </div>
