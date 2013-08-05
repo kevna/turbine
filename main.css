@@ -77,8 +77,15 @@ padding-top: 5px;
 font-size: 0.8em;
 }
 .validation {
+position: absolute;
 padding-left: 5px;
 color: #E0E0E0;
+}
+.center {
+position: absolute;
+color: #E0E0E0;
+width: 100%;
+text-align: center;
 }
 .right {
 position: absolute;
