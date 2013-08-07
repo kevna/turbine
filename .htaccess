@@ -1,2 +1,2 @@
-ErrorDocument 404 /aam13/turbine/error.404.html
-ErrorDocument 403 /aam13/turbine/error.hal.html
+ErrorDocument 404 /turbine/error.404.html
+ErrorDocument 403 /turbine/error.hal.html
