@@ -1,2 +1,13 @@
 ErrorDocument 404 /turbine/error.404.php
 ErrorDocument 403 /turbine/error.hal.html
+
+<FilesMatch "\.xml">
+	Order allow,deny
+	Deny from all
+</FilesMatch>
+
+<Files footer.php>
+	Order allow,deny
+	Deny from all
+</Files>
+
