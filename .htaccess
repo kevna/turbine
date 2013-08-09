@@ -1,2 +1,2 @@
-ErrorDocument 404 /turbine/error.404.html
+ErrorDocument 404 /turbine/error.404.php
 ErrorDocument 403 /turbine/error.hal.html
