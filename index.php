@@ -6,12 +6,12 @@
 	<link rel="stylesheet" href="main.css" />
 	<link rel="icon" sizes="256x256" href="favicon.ico" />
 	<title>Home - Turbine Interface</title>
+	<?php $xml = simplexml_load_file("current.xml"); ?>
 </head>
 <body>
 <div id="all">
+<header>
 <?php
-	$xml = simplexml_load_file("current.xml");
-	echo "<header>\n";
 	echo "\t<h1>", $xml->baseplateName, "<br />Generation Data Snapshot</h1>\n";
 	echo "\t<span class=\"state\">\n";
 	echo "\t\tStatus: <span class=", $xml->state, ">", $xml->state, "</span>\n";
@@ -20,7 +20,10 @@
 	echo "\t\tBaseplateID: ", $xml->baseplateID, "<br />\n";
 	echo "\t\tLast updated: ",$xml->dateTime, "\n";
 	echo "\t</span>\n";
-	echo "</header>\n<div id=\"content\">\n";
+?>
+</header>
+<div id="content">
+<?php
 	echo "\t<h3>Current Statistics (", $xml->dateTime, " GMT)</h3>\n\t<p>\n";
 	echo "\t\tWind speed: ", $xml->windSpeed, " ", $xml->windSpeed['units'], "<br />\n";
 	echo "\t\tWind direction: ", $xml->windDirection, $xml->windDirection['units'], "<br />\n";
@@ -30,15 +33,10 @@
 	echo "\t\tEnergy output: ", $xml->lifetimeEnergyOutput, " ", $xml->lifetimeEnergyOutput['units'], "<br />\n";
 	echo "\t\tSoftware uptime: ", $xml->softwareRunningHours, " ", $xml->softwareRunningHours['units'], "<br />\n";
 	echo "\t\tWindspeedhours (integral): ", $xml->windspeedHoursIntegral, " ", $xml->windspeedHoursIntegral['units'], "<br />\n";
-	echo "\t</p>\n</div>\n<footer>\n";
-	echo "\t<span class=\"validation\">\n\t\t<a href=\"http://validator.w3.org/check/referer\">HTML5</a>\n";
-	echo "\t\t<a href=\"http://jigsaw.w3.org/css-validator/check/referer\">CSS3</a>\n\t</span>\n";
-	//echo "<span class=\"center\">other links</span>";
-	echo "\t<span class=\"right\">", $xml->baseplateName, ": ";
-	echo "<span class=\"", $xml->state, "\">",$xml->state,"</span>";
-	echo " (",$xml->dateTime, ")</span>\n";
-	echo "</footer>\n";
+	echo "\t</p>\n";
 ?>
+</div>
+<?php	include "footer.php"; ?>
 </div>
 </body>
 </html>
