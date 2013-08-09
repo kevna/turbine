@@ -11,3 +11,8 @@ ErrorDocument 403 /turbine/error.hal.html
 	Deny from all
 </Files>
 
+<Files background.php>
+	Order allow,deny
+	Deny from all
+</Files>
+
