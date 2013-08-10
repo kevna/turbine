@@ -38,7 +38,7 @@
 	echo "\t\t\t<dd class=\"units\"><abbr title=\"kilowatt hours\">KWh</abbr></dd>\n";
 	echo "\t\t<dt>Software uptime</dt>\n\t\t\t<dd>", $xml->softwareRunningHours, "</dd>\n";
 	echo "\t\t\t<dd class=\"units\"><abbr title=\"hours\">h</abbr></dd>\n";
-	echo "\t\t<dt>Windspeedhours (integral)</dt>\n\t\t\t<dd>", $xml->windspeedHoursIntegral, "</dd>\n";
+	echo "\t\t<dt>Windspeedhours</dt>\n\t\t\t<dd>", $xml->windspeedHoursIntegral, "</dd>\n";
 	echo "\t\t\t<dd class=\"units\"><abbr title=\"hours x (meters per second)\">hm/s</abbr></dd>\n";
 	echo "\t</dl>\n";
 ?>
