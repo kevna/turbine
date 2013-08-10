@@ -25,14 +25,14 @@
 <div id="content">
 <?php
 	echo "\t<h3>Current Statistics (", $xml->dateTime, " <abbr title=\"grenwich mean time\">GMT</abbr>)</h3>\n\t<dl>\n";
-	echo "\t\t<dt>Wind speed</dt><dd>", $xml->windSpeed, "</dd><dd>", $xml->windSpeed['units'], "</dd>\n";
-	echo "\t\t<dt>Wind direction</dt><dd>", $xml->windDirection, "</dd><dd>", $xml->windDirection['units'], "</dd>\n";
-	echo "\t\t<dt>Rotor speed</dt><dd>", $xml->rotorSpeed, "</dd><dd>", $xml->rotorSpeed['units'], "</dd>\n";
-	echo "\t\t<dt>Power output</dt><dd>", $xml->powerOutput, "</dd><dd>", $xml->powerOutput['units'], "</dd>\n";
+	echo "\t\t<dt>Wind speed</dt>\n\t\t\t<dd>", $xml->windSpeed, "</dd>\n\t\t\t<dd><abbr title=\"meters per second\">m/s</abbr></dd>\n";
+	echo "\t\t<dt>Wind direction</dt>\n\t\t\t<dd>", $xml->windDirection, "</dd>\n\t\t\t<dd><abbr title=\"degrees\">&deg;</abbr></dd>\n";
+	echo "\t\t<dt>Rotor speed</dt>\n\t\t\t<dd>", $xml->rotorSpeed, "</dd>\n\t\t\t<dd><abbr title=\"revolutions per minute\">rpm</abbr></dd>\n";
+	echo "\t\t<dt>Power output</dt>\n\t\t\t<dd>", $xml->powerOutput, "</dd>\n\t\t\t<dd><abbr title=\"Watts\">W</abbr></dd>\n";
 	echo "\t</dl>\n\t<h3>Lifetime Statistics</h3>\n\t<dl>\n";
-	echo "\t\t<dt>Energy output</dt><dd>", $xml->lifetimeEnergyOutput, "</dd><dd>", $xml->lifetimeEnergyOutput['units'], "</dd>\n";
-	echo "\t\t<dt>Software uptime</dt><dd>", $xml->softwareRunningHours, "</dd><dd>", $xml->softwareRunningHours['units'], "</dd>\n";
-	echo "\t\t<dt>Windspeedhours (integral)</dt><dd>", $xml->windspeedHoursIntegral, "</dd><dd>", $xml->windspeedHoursIntegral['units'], "</dd>\n";
+	echo "\t\t<dt>Energy output</dt>\n\t\t\t<dd>", $xml->lifetimeEnergyOutput, "</dd>\n\t\t\t<dd><abbr title=\"kilowatt hours\">KWh</abbr></dd>\n";
+	echo "\t\t<dt>Software uptime</dt>\n\t\t\t<dd>", $xml->softwareRunningHours, "</dd>\n\t\t\t<dd><abbr title=\"hours\">h</abbr></dd>\n";
+	echo "\t\t<dt>Windspeedhours (integral)</dt>\n\t\t\t<dd>", $xml->windspeedHoursIntegral, "</dd>\n\t\t\t<dd><abbr title=\"hours x (meters per second)\">hm/s</abbr></dd>\n";
 	echo "\t</dl>\n";
 ?>
 </div>
