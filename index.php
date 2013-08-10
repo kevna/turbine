@@ -24,16 +24,16 @@
 </header>
 <div id="content">
 <?php
-	echo "\t<h3>Current Statistics (", $xml->dateTime, " GMT)</h3>\n\t<p>\n";
-	echo "\t\tWind speed: ", $xml->windSpeed, " ", $xml->windSpeed['units'], "<br />\n";
-	echo "\t\tWind direction: ", $xml->windDirection, $xml->windDirection['units'], "<br />\n";
-	echo "\t\tRotor speed: ", $xml->rotorSpeed, " ", $xml->rotorSpeed['units'], "<br />\n";
-	echo "\t\tPower output: ", $xml->powerOutput, " ", $xml->powerOutput['units'], "<br />\n";
-	echo "\t</p>\n\t<h3>Lifetime Statistics</h3>\n\t<p>\n";
-	echo "\t\tEnergy output: ", $xml->lifetimeEnergyOutput, " ", $xml->lifetimeEnergyOutput['units'], "<br />\n";
-	echo "\t\tSoftware uptime: ", $xml->softwareRunningHours, " ", $xml->softwareRunningHours['units'], "<br />\n";
-	echo "\t\tWindspeedhours (integral): ", $xml->windspeedHoursIntegral, " ", $xml->windspeedHoursIntegral['units'], "<br />\n";
-	echo "\t</p>\n";
+	echo "\t<h3>Current Statistics (", $xml->dateTime, " <abbr title=\"grenwich mean time\">GMT</abbr>)</h3>\n\t<dl>\n";
+	echo "\t\t<dt>Wind speed</dt><dd>", $xml->windSpeed, "</dd><dd>", $xml->windSpeed['units'], "</dd>\n";
+	echo "\t\t<dt>Wind direction</dt><dd>", $xml->windDirection, "</dd><dd>", $xml->windDirection['units'], "</dd>\n";
+	echo "\t\t<dt>Rotor speed</dt><dd>", $xml->rotorSpeed, "</dd><dd>", $xml->rotorSpeed['units'], "</dd>\n";
+	echo "\t\t<dt>Power output</dt><dd>", $xml->powerOutput, "</dd><dd>", $xml->powerOutput['units'], "</dd>\n";
+	echo "\t</dl>\n\t<h3>Lifetime Statistics</h3>\n\t<dl>\n";
+	echo "\t\t<dt>Energy output</dt><dd>", $xml->lifetimeEnergyOutput, "</dd><dd>", $xml->lifetimeEnergyOutput['units'], "</dd>\n";
+	echo "\t\t<dt>Software uptime</dt><dd>", $xml->softwareRunningHours, "</dd><dd>", $xml->softwareRunningHours['units'], "</dd>\n";
+	echo "\t\t<dt>Windspeedhours (integral)</dt><dd>", $xml->windspeedHoursIntegral, "</dd><dd>", $xml->windspeedHoursIntegral['units'], "</dd>\n";
+	echo "\t</dl>\n";
 ?>
 </div>
 <?php	include "footer.php"; ?>
