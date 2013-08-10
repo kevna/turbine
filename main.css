@@ -65,29 +65,29 @@ padding: 5px;
 background-color: #FFFFFF;
 border-radius: 10px;
 min-height: 200px;
-box-shadow: 5px 5px 5px #363636;
+box-shadow: 3px 3px 5px #363636;
 z-index: 3;
 }
 dl {
-	display: inline-block;
-	width: 100%;
+display: inline-block;
+width: 100%;
 }
 dt {
-	width: 50%;
-	clear: both;
-	float: left;
-	text-align: right;
-	color: #363636;
-	font-weight: bold;
+width: 50%;
+clear: both;
+float: left;
+text-align: right;
+color: #363636;
+font-weight: bold;
 }
 dt:after {
-	content: ":";
+content: ":";
 }
 dd {
-	float: left;
-	margin: 0px;
-	margin-bottom: 0.5em;
-	padding-left: 0.25em;
+float: left;
+margin: 0px;
+margin-bottom: 0.5em;
+padding-left: 0.25em;
 }
 
 ::selection {
