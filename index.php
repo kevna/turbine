@@ -31,21 +31,21 @@
 			<dd class="units"><abbr title="meters per second">m/s</abbr></dd>
 <?php
 	if (($xml->windDirection >= 337.5) || ($xml->windDirection <= 22.5)) {
-		$direction = "North";
+		$direction = "<abbr title=\"North (Tramontana)\">N</abbr>";
 	} else if ($xml->windDirection < 67.5) {
-		$direction = "North East";
+		$direction = "<abbr title=\"North East (Greco)\">NE</abbr>";
 	} else if ($xml->windDirection <= 112.5) {
-		$direction = "East";
+		$direction = "<abbr title=\"East (Levante)\">E</abbr>";
 	} else if ($xml->windDirection < 157.5) {
-		$direction = "South East";
+		$direction = "<abbr title=\"South East (Scirocco)\">SE</abbr>";
 	} else if ($xml->windDirection <= 202.5) {
-		$direction = "South";
+		$direction = "<abbr title=\"South (Ostro)\">S</abbr>";
 	} else if ($xml->windDirection < 247.5) {
-		$direction = "South West";
+		$direction = "<abbr title=\"South West (Libeccio)\">SW</abbr>";
 	} else if ($xml->windDirection <= 292.5) {
-		$direction = "West";
+		$direction = "<abbr title=\"West (Ponente)\">W</abbr>";
 	} else {
-		$direction = "North West";
+		$direction = "<abbr title=\"North West (Maestro)\">NW</abbr>";
 	};
 ?>
 		<dt>Wind direction</dt>
