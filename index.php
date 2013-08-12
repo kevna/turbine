@@ -23,25 +23,53 @@
 ?>
 </header>
 <div id="content">
+<?php echo "\t<h3>Current Statistics (", $xml->dateTime, " "; ?>
+	<abbr title="grenwich mean time">GMT</abbr>)</h3>
+	<dl>
+		<dt>Wind speed</dt>
+<?php echo "\t\t\t<dd>", $xml->windSpeed, "</dd>\n"; ?>
+			<dd class="units"><abbr title="meters per second">m/s</abbr></dd>
 <?php
-	echo "\t<h3>Current Statistics (", $xml->dateTime, " <abbr title=\"grenwich mean time\">GMT</abbr>)</h3>\n\t<dl>\n";
-	echo "\t\t<dt>Wind speed</dt>\n\t\t\t<dd>", $xml->windSpeed, "</dd>\n";
-	echo "\t\t\t<dd class=\"units\"><abbr title=\"meters per second\">m/s</abbr></dd>\n";
-	echo "\t\t<dt>Wind direction</dt>\n\t\t\t<dd>", $xml->windDirection, "</dd>\n";
-	echo "\t\t\t<dd class =\"units\"><abbr title=\"degrees\">&deg;</abbr></dd>\n";
-	echo "\t\t<dt>Rotor speed</dt>\n\t\t\t<dd>", $xml->rotorSpeed, "</dd>\n";
-	echo "\t\t\t<dd class=\"units\"><abbr title=\"revolutions per minute\">rpm</abbr></dd>\n";
-	echo "\t\t<dt>Power output</dt>\n\t\t\t<dd>", $xml->powerOutput, "</dd>\n";
-	echo "\t\t\t<dd class=\"units\"><abbr title=\"Watts\">W</abbr></dd>\n";
-	echo "\t</dl>\n\t<h3>Lifetime Statistics</h3>\n\t<dl>\n";
-	echo "\t\t<dt>Energy output</dt>\n\t\t\t<dd>", $xml->lifetimeEnergyOutput, "</dd>\n";
-	echo "\t\t\t<dd class=\"units\"><abbr title=\"kilowatt hours\">KWh</abbr></dd>\n";
-	echo "\t\t<dt>Software uptime</dt>\n\t\t\t<dd>", $xml->softwareRunningHours, "</dd>\n";
-	echo "\t\t\t<dd class=\"units\"><abbr title=\"hours\">h</abbr></dd>\n";
-	echo "\t\t<dt>Windspeedhours</dt>\n\t\t\t<dd>", $xml->windspeedHoursIntegral, "</dd>\n";
-	echo "\t\t\t<dd class=\"units\"><abbr title=\"hours x (meters per second)\">hm/s</abbr></dd>\n";
-	echo "\t</dl>\n";
+	if (($xml->windDirection >= 337.5) || ($xml->windDirection <= 22.5)) {
+		$direction = "North";
+	} else if ($xml->windDirection < 67.5) {
+		$direction = "North East";
+	} else if ($xml->windDirection <= 112.5) {
+		$direction = "East";
+	} else if ($xml->windDirection < 157.5) {
+		$direction = "South East";
+	} else if ($xml->windDirection <= 202.5) {
+		$direction = "South";
+	} else if ($xml->windDirection < 247.5) {
+		$direction = "South West";
+	} else if ($xml->windDirection <= 292.5) {
+		$direction = "West";
+	} else {
+		$direction = "North West";
+	};
 ?>
+		<dt>Wind direction</dt>
+<?php	echo "\t\t\t<dd>", $direction, " (", $xml->windDirection, ")</dd>\n"; ?>
+			<dd class="units"><abbr title="degrees">&deg;</abbr></dd>
+		<dt>Rotor speed</dt>
+<?php	echo "\t\t\t<dd>", $xml->rotorSpeed, "</dd>\n"; ?>
+			<dd class="units"><abbr title="revolutions per minute">rpm</abbr></dd>
+		<dt>Power output</dt>
+<?php	echo "\t\t\t<dd>", $xml->powerOutput, "</dd>\n"; ?>
+			<dd class="units"><abbr title="Watts">W</abbr></dd>
+	</dl>
+	<h3>Lifetime Statistics</h3>
+	<dl>
+		<dt>Energy output</dt>
+<?php	echo "\t\t\t<dd>", $xml->lifetimeEnergyOutput, "</dd>\n"; ?>
+			<dd class="units"><abbr title="kilowatt hours">KWh</abbr></dd>
+		<dt>Software uptime</dt>
+<?php	echo "\t\t\t<dd>", $xml->softwareRunningHours, "</dd>\n"; ?>
+			<dd class="units"><abbr title="hours">h</abbr></dd>
+		<dt>Windspeedhours</dt>
+<?php	echo "\t\t\t<dd>", $xml->windspeedHoursIntegral, "</dd>\n"; ?>
+			<dd class="units"><abbr title="hours x (meters per second)">hm/s</abbr></dd>
+	</dl>
 </div>
 <?php	include "footer.php"; ?>
 </div>
