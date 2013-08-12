@@ -1,0 +1,24 @@
+span.running {
+	color: #00E300;
+}
+
+span.running::selection {
+	background-color: #00E300;
+}
+
+span.parked {
+	color: #EDD300;
+}
+
+span.parked::selection {
+	background-color: #EDD300;
+}
+
+span.stopped {
+	color: #ED0000;
+}
+
+span.stopped::selection {
+	background-color: #ED0000;
+}
+
