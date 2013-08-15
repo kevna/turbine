@@ -6,7 +6,10 @@
 	<link rel="stylesheet" href="main.css" />
 	<link rel="icon" sizes="256x256" href="favicon.ico" />
 	<title>Home - Turbine Interface</title>
-	<?php $xml = simplexml_load_file("current.xml"); ?>
+<?php
+	$xml = simplexml_load_file("current.xml");
+	$syncTime = date('d/m/Y H:i', strtotime($xml->dateTime));
+?>
 </head>
 <body>
 <div id="all">
@@ -18,12 +21,12 @@
 	echo "\t</span>\n";
 	echo "\t<span class=\"updated\">\n";
 	echo "\t\tBaseplateID: ", $xml->baseplateID, "<br />\n";
-	echo "\t\tLast updated: ",$xml->dateTime, "\n";
+	echo "\t\tLast updated: ",$syncTime, "\n";
 	echo "\t</span>\n";
 ?>
 </header>
 <div id="content">
-<?php echo "\t<h3>Current Statistics (", $xml->dateTime, " "; ?>
+<?php echo "\t<h3>Current Statistics (", $syncTime; ?>
 	<abbr title="grenwich mean time">GMT</abbr>)</h3>
 	<dl>
 		<dt>Wind speed</dt>
