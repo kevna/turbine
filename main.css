@@ -19,7 +19,7 @@ background-color: #EAEAF0;
 
 #all {
 margin: auto;
-width: 800px;
+max-width: 800px;
 }
 
 #content {
