@@ -5,17 +5,22 @@
 
 body {
 font-family: "Arial", sans-serif;
-margin: 2px;
+margin: 0px;
 /*margin-top: -23px;*/
 padding-bottom: 25px;
 background-color: #EAEAF0;
+}
+
+@media screen and (min-width: 800px) {
+	body {
+		margin: 2px;
+	}
 }
 
 #all {
 margin: auto;
 width: 800px;
 }
-
 
 #content {
 overflow: hidden;
