@@ -3,6 +3,8 @@
 <head>
 	<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 	<meta http-equiv="refresh" content="150" />
+	<meta name="HandheldFriendly" content="True" />
+	<meta name="Viewport" content="width=device-width" />
 	<link rel="stylesheet" href="main.css" />
 	<link rel="icon" sizes="256x256" href="favicon.ico" />
 	<title>Home - Turbine Interface</title>
