@@ -6,7 +6,7 @@ footer {
 	font-size: 0.8em;
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 50em) {
 	footer {
 		bottom: 2px;
 		width: 800px;
@@ -15,7 +15,7 @@ footer {
 	}
 }	
 
-@media screen and (max-width: 801px) {
+@media screen and (max-width: 50em) {
 	footer {
 		bottom: 0px;
 		width: 100%;
