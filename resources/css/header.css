@@ -7,8 +7,19 @@ header {
 	padding-bottom: 35px;
 	/*background-color: #A3A3A3;*/
 	background: #A3A3A3 url("../images/line-turbine.png") no-repeat 45px -20px;
-	border-radius: 5px 5px 10px 10px;
-	box-shadow: 5px 5px 6px #363636;
+}
+
+@media screen and (min-width: 800px) {
+	header {
+		border-radius: 5px 5px 10px 10px;
+		box-shadow: 5px 5px 6px #363636;
+	}
+}
+
+@media screen and (max-width: 801px) {
+	header {
+		box-shadow: 0px 5px 6px #363636;
+	}
 }
 
 header.error {
