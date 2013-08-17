@@ -1,11 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
-	<link rel="stylesheet" href="main.css">
-	<link rel="icon" sizes="256x256" href="favicon.ico" />
+<?php	include "head.php" ?>
 	<title>404 - Turbine Interface</title>
-	<?php $xml = simplexml_load_file("current.xml"); ?>
 </head>
 <body>
 <div id="all">
