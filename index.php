@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<?php	include "head.php" ?>
+<?php	include "resources/include/head.php" ?>
 	<meta http-equiv="refresh" content="150" />
 	<title>Home - Turbine Interface</title>
 </head>
@@ -68,7 +68,7 @@
 			<dd class="units"><abbr title="hours x (meters per second)">hm/s</abbr></dd>
 	</dl>
 </div>
-<?php	include "footer.php"; ?>
+<?php	include "resources/include/footer.php"; ?>
 </div>
 </body>
 </html>
