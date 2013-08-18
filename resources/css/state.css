@@ -1,5 +1,11 @@
 span.running {
-	color: #00E300;
+	display: inline-block;
+	width: 4em;
+	text-align: center;
+	color: #00ED00;
+	border-width: 1px;
+	border-style: solid;
+	border-radius: 4px;
 }
 
 span.running::selection {
@@ -7,7 +13,13 @@ span.running::selection {
 }
 
 span.parked {
+	display: inline-block;
+	width: 4em;
 	color: #EDD300;
+	text-align: center;
+	border-width: 1px;
+	border-style: solid;
+	border-radius: 4px;
 }
 
 span.parked::selection {
@@ -15,7 +27,15 @@ span.parked::selection {
 }
 
 span.stopped {
-	color: #ED0000;
+	display: inline-block;
+	width: 4em;
+	background-color: #ED0000;
+	border-color: #ED0000;
+	color: inherit;
+	text-align: center;
+	border-width: 1px;
+	border-style: solid;
+	border-radius: 4px;
 }
 
 span.stopped::selection {
