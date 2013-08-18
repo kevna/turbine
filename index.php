@@ -19,6 +19,7 @@
 	echo "\t</span>\n";
 ?>
 </header>
+<?php	include "resources/include/nav.php" ?>
 <div id="content">
 <?php echo "\t<h3>Current Statistics (", $syncTime; ?>
 	<abbr title="grenwich mean time">GMT</abbr>)</h3>
