@@ -10,7 +10,7 @@ html {
 
 body {
 font-family: "Arial", sans-serif;
-margin: 0px;
+margin: 0em;
 height: 100%;
 /*margin-top: -23px;*/
 /*padding-bottom: 25px;*/
@@ -19,7 +19,7 @@ background-color: #EAEAF0;
 
 @media screen and (min-width: 50em) {
 	body {
-		margin: 2px;
+		margin: 0.2em;
 	}
 }
 
@@ -33,25 +33,25 @@ max-width: 50em; /*800px;*/
 #content {
 overflow: hidden;
 text-align: center;
-margin: 5px;
-margin-top: 7px;
+margin: 0.35em;
+margin-top: 0.5em;
 margin-bottom: auto;
-padding: 5px;
-padding-bottom: 25px;
+padding: 0.35em;
+padding-bottom: 2em;
 background-color: #FFFFFF;
 /*border-radius: 10px;*/
 min-height: 12em; /*200px;*/
-box-shadow: 3px 3px 5px #363636;
+box-shadow: 0.2em 0.2em 0.35em #363636;
 z-index: 3;
 }
 @media screen and (min-width: 50em) {
 	#content {
-		border-radius: 10px;
+		border-radius: 0.75em;
 	}
 }
 @media screen and (max-width: 50em) {
 	#content {
-		border-radius: 6px;
+		border-radius: 0.5em;
 	}
 }
 
@@ -77,7 +77,7 @@ content: ":";
 }
 dd {
 float: left;
-margin: 0px;
+margin: 0em;
 margin-bottom: 0.5em;
 padding-left: 0em;
 width: 5em;

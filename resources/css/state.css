@@ -3,9 +3,9 @@ span.running {
 	width: 4em;
 	text-align: center;
 	color: #00ED00;
-	border-width: 1px;
+	border-width: 0.1em;
 	border-style: solid;
-	border-radius: 4px;
+	border-radius: 0.35em;
 }
 
 span.running::selection {
@@ -17,9 +17,9 @@ span.parked {
 	width: 4em;
 	color: #EDD300;
 	text-align: center;
-	border-width: 1px;
+	border-width: 0.1em;
 	border-style: solid;
-	border-radius: 4px;
+	border-radius: 0.35em;
 }
 
 span.parked::selection {
@@ -33,9 +33,9 @@ span.stopped {
 	border-color: #ED0000;
 	color: inherit;
 	text-align: center;
-	border-width: 1px;
+	border-width: 0.1em;
 	border-style: solid;
-	border-radius: 4px;
+	border-radius: 0.35em;
 }
 
 span.stopped::selection {
