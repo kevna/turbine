@@ -9,9 +9,9 @@ footer {
 
 @media screen and (min-width: 50em) {
 	footer {
-		position: fixed;
+		position: absolute; /*fixed;*/
 		bottom: 0.2em; /*2px;*/
-		width: 100%;
+		width: 100%; /*62.5em;*/
 		padding-top: 0.2em; /*2px;*/
 		border-radius: 0.5em; /*5px;*/
 		box-shadow: 0.4em 0.4em 0.45em #363636;
