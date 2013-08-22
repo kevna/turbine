@@ -8,3 +8,7 @@ Options -Indexes
 	Deny from all
 </FilesMatch>
 
+<FilesMatch "\.md">
+	Order allow,deny
+	Deny from all
+</FilesMatch>
