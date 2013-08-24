@@ -47,7 +47,7 @@
 	};
 ?>
 		<dt>Wind direction</dt>
-<?php	echo "\t\t\t<dd>", $direction, " (", $xml->windDirection, ")</dd>\n"; ?>
+<?php	echo "\t\t\t<dd>", $xml->windDirection, " (", $direction, ")</dd>\n"; ?>
 			<dd class="units"><abbr title="degrees">&deg;</abbr></dd>
 		<dt>Rotor speed</dt>
 <?php	echo "\t\t\t<dd>", $xml->rotorSpeed, "</dd>\n"; ?>
