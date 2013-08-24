@@ -15,13 +15,13 @@
 	echo "\t</span>\n";
 	echo "\t<span class=\"updated\">\n";
 	echo "\t\tBaseplateID: ", $xml->baseplateID, "<br />\n";
-	echo "\t\tLast updated: ",$syncTime, "\n";
+	echo "\t\tLast updated: <span class=\"time\">",$syncTime, "</span>\n";
 	echo "\t</span>\n";
 ?>
 </header>
 <?php	include "resources/include/nav.php" ?>
 <div id="content">
-<?php echo "\t<h3>Current Statistics (", $syncTime; ?>
+<?php echo "\t<h3>Current Statistics (<span class=\"time\">", $syncTime, "</span>"; ?>
 	<abbr title="grenwich mean time">GMT</abbr>)</h3>
 	<dl>
 		<dt>Wind speed</dt>

@@ -31,6 +31,10 @@ margin: auto;
 max-width: 50em; /*800px;*/
 }
 
+.time {
+	font-family: "Marcellus SC";
+}
+
 #content {
 overflow: hidden;
 text-align: center;
@@ -77,6 +81,7 @@ dt:after {
 content: ":";
 }
 dd {
+font-family: "Marcellus SC";
 float: left;
 margin: 0em;
 margin-bottom: 0.5em;
@@ -85,6 +90,7 @@ width: 5em;
 text-align: right;
 }
 dd.units {
+font-family: "Roboto";
 width: 2em;
 padding-left: 0.2em;
 text-align: left;
