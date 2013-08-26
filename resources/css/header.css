@@ -26,7 +26,7 @@ header.error {
 	color: #ED0000;
 }
 
-h1 {
+header h1 {
 	margin: 0em;
 	text-align: center;
 /*	padding-top: 5px;

@@ -15,14 +15,15 @@
 	echo "\t</span>\n";
 	echo "\t<span class=\"updated\">\n";
 	echo "\t\tBaseplateID: ", $xml->baseplateID, "<br />\n";
-	echo "\t\tLast updated: <span class=\"time\">",$syncTime, "</span>\n";
+	echo "\t\tLast updated: ",$syncTime, "\n";
 	echo "\t</span>\n";
 ?>
 </header>
 <?php	include "resources/include/nav.php" ?>
-<div id="content">
-<?php echo "\t<h3>Current Statistics (<span class=\"time\">", $syncTime, "</span>"; ?>
-	<abbr title="grenwich mean time">GMT</abbr>)</h3>
+<main>
+<section>
+<?php echo "\t<h1>Current Statistics (", $syncTime; ?>
+	<abbr title="grenwich mean time">GMT</abbr>)</h1>
 	<dl>
 		<dt>Wind speed</dt>
 <?php echo "\t\t\t<dd>", $xml->windSpeed, "</dd>\n"; ?>
@@ -56,7 +57,9 @@
 <?php	echo "\t\t\t<dd>", $xml->powerOutput, "</dd>\n"; ?>
 			<dd class="units"><abbr title="Watts">W</abbr></dd>
 	</dl>
-	<h3>Lifetime Statistics</h3>
+</section>
+<section>
+	<h1>Lifetime Statistics</h1>
 	<dl>
 		<dt>Energy output</dt>
 <?php	echo "\t\t\t<dd>", $xml->lifetimeEnergyOutput, "</dd>\n"; ?>
@@ -68,7 +71,8 @@
 <?php	echo "\t\t\t<dd>", $xml->windspeedHoursIntegral, "</dd>\n"; ?>
 			<dd class="units"><abbr title="hours x (meters per second)">hm/s</abbr></dd>
 	</dl>
-</div>
+</section>
+</main>
 <?php	include "resources/include/footer.php"; ?>
 </div>
 </body>

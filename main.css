@@ -31,11 +31,11 @@ margin: auto;
 max-width: 50em; /*800px;*/
 }
 
-.time {
+time {
 	font-family: "Marcellus SC";
 }
 
-#content {
+main {
 overflow: hidden;
 text-align: center;
 margin: 0.35em;
@@ -50,14 +50,18 @@ box-shadow: 0.2em 0.2em 0.35em #363636;
 z-index: 3;
 }
 @media screen and (min-width: 50em) {
-	#content {
+	main {
 		border-radius: 0.75em;
 	}
 }
 @media screen and (max-width: 50em) {
-	#content {
+	main {
 		border-radius: 0.5em;
 	}
+}
+
+main h1 {
+	font-size: 1.3em;
 }
 
 abbr {

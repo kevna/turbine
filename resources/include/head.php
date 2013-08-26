@@ -22,5 +22,5 @@
 <?php
 	date_default_timezone_set("GMT");
 	$xml = simplexml_load_file("current.xml");
-	$syncTime = date('d/m/Y H:i', strtotime($xml->dateTime));
+	$syncTime = "<time datetime=\"" . $xml->dateTime . "\">" . date('d/m/Y H:i', strtotime($xml->dateTime)) .  "</time>";
 ?>
