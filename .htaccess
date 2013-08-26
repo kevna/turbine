@@ -1,7 +1,7 @@
 ErrorDocument 404 /turbine/error.404.php
 ErrorDocument 403 /turbine/error.hal.html
 
-Options -Indexes
+#Options -Indexes
 
 <FilesMatch "\.xml">
 	Order allow,deny
