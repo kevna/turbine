@@ -9,12 +9,12 @@
 <header class="error">
 	<h1>404 - page not found</h1>
 </header>
-<div id="content">
+<main>
 	<p>
 	The server could not find the page you were looking for.
 	</p>
 	<a href="./">Return to Home</a>
-</div>
+</main>
 <?php include "resources/include/footer.php" ?>
 </div>
 </body>
