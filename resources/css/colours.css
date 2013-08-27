@@ -1,0 +1,31 @@
+header, nav, footer {
+	background-color: #A3A3A3;
+}
+
+header.error {
+	color: #ED0000;
+}
+
+header span, footer span {
+	color: #E0E0E0;
+}
+
+nav a {
+	background-color: #A3A3A3;
+	color #363636;
+}
+
+nav a:hover {
+	background-color: #E0E0E0;
+	color: #363636;
+}
+
+nav.scrolling {
+	background-color: rgba(163, 163, 163, 0.85);
+}
+
+a {
+	color: #606060;
+}
+
+
