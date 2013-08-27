@@ -8,10 +8,12 @@
 	<script type="text/javascript">
 		$(window).scroll(function() {
 			if ($(this).scrollTop() > parseFloat($("header").css("height"))) {
-				$("#content").css("margin-top", $("nav").css("height"));
+				if (($(window).width() / parseFloat($("body").css("font-size"))) < 60) {
+					$("main").css("margin-top", $("nav").css("height"));
+				}
 				$("nav").addClass("scrolling");
 			} else {
-				$("#content").css("margin-top", 7);
+				$("main").css("margin-top", 7);
 				$("nav").removeClass("scrolling");
 			}
 		});
