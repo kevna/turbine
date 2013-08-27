@@ -36,6 +36,7 @@ time {
 }
 
 main {
+display: block;
 overflow: hidden;
 text-align: center;
 margin: 0.35em;
