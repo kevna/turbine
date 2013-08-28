@@ -1,4 +1,5 @@
-	<meta http-equiv="Content-Type"	content="text/html;charset=utf-8" />
+	<!--<meta http-equiv="Content-Type"	content="text/html;charset=utf-8" />-->
+	<meta charset="utf-8" />
 	<meta name="HandheldFriendly"	content="True" />
 	<meta name="Viewport"		content="width=device-width" />
 	<link rel="icon" sizes="256x256" href="favicon.ico" />
