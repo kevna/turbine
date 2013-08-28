@@ -11,5 +11,4 @@
 	echo "\t\t(", $syncTime, ")\n";
 ?>
 	</span>
-<!--<script type="text/javascript">document.getElementById("content").style.padding-bottom=document.getElementByTagName("footer").offsetHeight+5;</script>-->
 </footer>
