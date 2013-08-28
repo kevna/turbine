@@ -1,7 +1,7 @@
 <nav>
 	<a id="nav-home"	href="."		>Home</a>
-	<a id="nav-404"		href="error.404.php"	>Error 404</a>
-	<a id="nav-403"		href="error.hal.php"	>Error 403</a>
+	<!--<a id="nav-404"		href="error.404.php"	>Error 404</a>
+	<a id="nav-403"		href="error.hal.html"	>Error 403</a>-->
 	<form id="nav-history" action="javascript:alert('submission failed')">
 		<span>From:</span><span class="alert" id="from-feedback"></span>
 		<input name="from-date"	type="date"	size="8"	title="starting date" />
