@@ -11,7 +11,7 @@
 	<script type="text/ecmascript">
 		$(window).scroll(function() {
 			if ($(this).scrollTop() > parseFloat($("header").css("height"))) {
-				if (($(window).width() / parseFloat($("body").css("font-size"))) < 60) {
+				if (($(window).width() / parseFloat($("body").css("font-size"))) < 65) {
 					$("main").css("margin-top", $("nav").css("height"));
 				}
 				$("nav").addClass("scrolling");
