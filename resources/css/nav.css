@@ -27,12 +27,12 @@ nav span.alert {
 nav input {
 /*	font-family: "Marcellus SC";*/
 	margin: 0.1em;
-	//margin-right: 0.45em;
+	/*margin-right: 0.45em;*/
 	padding: 0.1em;
-	//padding-left: 0.15em;
+	/*padding-left: 0.15em; */
 	border-width: 0.23em;
 	border-radius: 0.4em;
-//	border-radius: 0.25em 0.75em 0.25em 0.75em;
+	/*border-radius: 0.25em 0.75em 0.25em 0.75em;*/
 }
 
 nav input.focused:not([type="submit"]) {
