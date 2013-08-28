@@ -1,5 +1,6 @@
 ErrorDocument 404 /turbine/error.404.php
 ErrorDocument 403 /turbine/error.hal.html
+ErrorDocument 400 /turbine/error.php?errorCode=400
 
 #Options -Indexes
 
